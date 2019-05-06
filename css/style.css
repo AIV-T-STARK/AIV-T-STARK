@@ -1,0 +1,155 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.25;
+  background: #fff;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  border: 2px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.4rem;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #f7bcae;
+  color: #000;
+  border-color: #f7bcae;
+}
+
+.btn-primary:hover {
+  background: #fff;
+  color: #f7bcae;
+}
+
+.btn-block {
+  display: block !important;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+/* header */
+.header-wrapper {
+  background: #ddd;
+}
+.nav-header {
+  display: flex;
+}
+.nav-header .nav-left {
+  width: 80%;
+}
+.nav-header .nav-rignt {
+  width: 20%;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  display: block;
+  font-size: 1.25rem;
+  margin: 10px 7px;
+  color: #000;
+  text-decoration: none;
+}
+
+.menu li a .fas {
+  margin-left: 0.75rem
+}
+
+
+/* Hero banner */
+.banner-wrapper {
+  background: url(../image/camera-coffee-composition-1509428.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+
+.banner-content {
+  padding-top: 80px;
+  max-width: 300px;
+  color: #fff;
+}
+
+.banner-content p {
+  margin-top: 10px;
+}
+
+/* Main */
+.main {
+  padding: 40px 0;
+}
+
+.main-content {
+  display: flex;
+  margin: 0 -10px;
+}
+
+.main-item {
+  width: 25%;
+  padding: 0 10px;
+}
+
+.item-content {
+  margin-top: 20px;
+}
+
+.item-content .btn {
+  margin-bottom: 10px;
+}
+
+.item-content.row .item-img {
+  width: 50%;
+  padding: 0 10px;
+}
+
+
+/*footer */
+
+.footer-wrapper {
+  padding: 40px 0;
+}
+
+.footer-item {
+  width: 25%;
+  padding: 0 10px;
+}
+
+.footer-item ul {
+  margin-top: 15px;
+}
