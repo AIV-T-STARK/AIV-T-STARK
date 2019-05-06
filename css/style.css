@@ -1,4 +1,16 @@
+/**
+* Layout - Nguyễn Gia Hào
+*
+*/
+/*---------------------------
+  1.Basic
+  2.Header
+  3.Hero banner
+  4.Main
+  5.Footer
+-----------------------------*/
 
+/*====== 1.Basic ======*/
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +27,12 @@ body {
 
 ul {
   list-style: none;
+}
+
+input, select {
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+  height: 1.75rem;
 }
 
 .container {
@@ -53,19 +71,81 @@ ul {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.col-1,.col-3,.col-4,.col-6,.col-12 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.col-1 {
+  flex: 0 0 8.33333333333%;
+  max-width: 8.33333333333%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 .img-responsive {
   width: 100%;
 }
 
-/* header */
+/*====== 2.Header ======*/
 .header-wrapper {
   background: #ddd;
+  padding: 12px 0;
 }
+
+.search {
+  display: flex;
+  position: relative;
+}
+
+.search-left {
+
+}
+
+.search-right {
+  position: relative;
+}
+
+.search .search-dropdown {
+  
+}
+
+.search .text-search {
+  width: 500px;
+}
+
+.search .search-icon i {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+
+}
+
 .nav-header {
   display: flex;
+  margin-top: 10px;
 }
 .nav-header .nav-left {
   width: 80%;
@@ -81,24 +161,53 @@ ul {
 .menu li a {
   display: block;
   font-size: 1.25rem;
-  margin: 10px 7px;
+  margin: 0 15px 0 0;
   color: #000;
   text-decoration: none;
 }
 
 .menu li a .fas {
-  margin-left: 0.75rem
+  margin-left: 0.5rem
 }
 
+.cart-icon {
+  position: relative;
+}
 
-/* Hero banner */
+.cart-number {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 18px;
+  background: red;
+  border-radius: 100%;
+  top: -8px;
+  right: -11px;
+}
+
+/*====== 3.Hero banner ======*/
+.hero-banner {
+  position: relative;
+}
 .banner-wrapper {
+  position: relative;
   background: url(../image/camera-coffee-composition-1509428.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 300px;
 }
 
+.dark-overlay {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
 
 .banner-content {
   padding-top: 80px;
@@ -110,19 +219,9 @@ ul {
   margin-top: 10px;
 }
 
-/* Main */
+/*====== 4.Main ======*/
 .main {
   padding: 40px 0;
-}
-
-.main-content {
-  display: flex;
-  margin: 0 -10px;
-}
-
-.main-item {
-  width: 25%;
-  padding: 0 10px;
 }
 
 .item-content {
@@ -133,23 +232,21 @@ ul {
   margin-bottom: 10px;
 }
 
-.item-content.row .item-img {
-  width: 50%;
-  padding: 0 10px;
+.item-content .item-img {
+  margin-bottom: 10px;
+}
+
+.popular-img {
+  max-height: 144px;
 }
 
 
-/*footer */
+/*====== 5.Footer ======*/
 
 .footer-wrapper {
   padding: 40px 0;
 }
 
-.footer-item {
-  width: 25%;
-  padding: 0 10px;
-}
-
 .footer-item ul {
-  margin-top: 15px;
+  margin-top: 20px;
 }

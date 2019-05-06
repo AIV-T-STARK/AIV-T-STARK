@@ -19,22 +19,42 @@
 			<div class="container">
 				<!-- Top header -->
 				<div class="top-header">
-
+					<div class="search">
+						<div class="search-left">
+							<select name="#" id="#" class="search-dropdown">
+								<option value="0" selected> All</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select>
+						</div>
+						<div class="search-right">
+							<input type="text" class="text-search">
+							<a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+						</div>
+					</div>
 				</div>
 				<!-- Navbar -->
 				<nav class="nav-header">
 					<div class="nav-left">
 						<ul class="menu">
-							<li><a href="#">lorem<i class="fas fa-angle-down"></i></a></li>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
+							<li><a href="#">Departments<i class="fas fa-angle-down"></i></a></li>
+							<li><a href="#">Account</a></li>
+							<li><a href="#">Deals</a></li>
+							<li><a href="#">Registry</a></li>
+							<li><a href="#">Sell</a></li>
+							<li><a href="#">Help</a></li>
 						</ul>
 					</div>
 					<div class="nav-right">
 						<ul class="menu">
 							<li><a href="#">Sign in<i class="fas fa-angle-down"></i></a></li>
-							<li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+							<li>
+								<a href="#" class="cart-icon">
+									<i class="fas fa-shopping-cart"></i>
+									<span class="cart-number">4</span>
+								</a>
+							</li>
 						</ul>
 					</div>
 				</nav>
@@ -47,12 +67,14 @@
 	<!-- Hero banner -->
 	<div class="hero-banner">
 		<div class="banner-wrapper">
-			<div class="container">
-				<div class="banner-content">
-					<h1>Lorem</h1>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, ullam architecto. Exercitationem
-						deleniti ducimus, est, quae earum incidunt asperiores enim aute</p>
-				</div>
+			<div class="dark-overlay">
+					<div class="container">
+						<div class="banner-content">
+							<h1>Lorem</h1>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, ullam architecto. Exercitationem
+								deleniti ducimus, est, quae earum incidunt asperiores enim aute</p>
+						</div>
+					</div>
 			</div>
 		</div>
 	</div>
@@ -63,25 +85,29 @@
 		<div class="main-wrapper">
 			<div class="container">
 				<div class="main-content row">
-					<div class="main-item">
+					<div class="col-3 main-item">
 						<h3>Welcome</h3>
-						<div class="item-content">
-							<a href="#" class="btn btn-primary btn-block">Sign in</a>
-							<a href="#" class="btn btn-primary btn-block">Create account</a>
+						<div class="item-content row">
+							<div class="col-12">
+								<a href="#" class="btn btn-primary btn-block">Sign in</a>
+							</div>
+							<div class="col-12">
+								<a href="#" class="btn btn-primary btn-block">Create account</a>
+							</div>
 						</div>
 					</div>
-					<div class="main-item">
+					<div class="col-3 main-item">
 						<h3>Popular Departments</h3>
 						<div class="item-content row">
-							<div class="item-img"><img class="img-responsive" src="./image/300.jpg" alt="img"></div>
-							<div class="item-img"><img class="img-responsive" src="./image/300.jpg" alt="img"></div>
-							<div class="item-img"><img class="img-responsive" src="./image/300.jpg" alt="img"></div>
-							<div class="item-img"><img class="img-responsive" src="./image/300.jpg" alt="img"></div>
-							<div class="item-img"><img class="img-responsive" src="./image/300.jpg" alt="img"></div>
-							<div class="item-img"><img class="img-responsive" src="./image/300.jpg" alt="img"></div>
+							<div class="col-6 item-img"><img class="img-responsive popular-img" src="./image/300.jpg" alt="img"></div>
+							<div class="col-6 item-img"><img class="img-responsive popular-img" src="./image/300.jpg" alt="img"></div>
+							<div class="col-6 item-img"><img class="img-responsive popular-img" src="./image/300.jpg" alt="img"></div>
+							<div class="col-6 item-img"><img class="img-responsive popular-img" src="./image/300.jpg" alt="img"></div>
+							<div class="col-6 item-img"><img class="img-responsive popular-img" src="./image/300.jpg" alt="img"></div>
+							<div class="col-6 item-img"><img class="img-responsive popular-img" src="./image/300.jpg" alt="img"></div>
 						</div>
 					</div>
-					<div class="main-item">
+					<div class="col-3 main-item">
 						<h3>Clothing</h3>
 						<div class="item-content">
 							<div class="item-img"><img class="img-responsive" src="./image/300.jpg" alt="img"></div>
@@ -90,11 +116,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="main-item">
+					<div class="col-3 main-item">
 						<h3>Deals</h3>
 						<div class="item-content">
 							<div class="item-img">
-								<img class="img-responsive" src="./image/300.jpg" alt="img">
+								<img class="img-responsive" src="./image/300.jpg" alt="img" style="max-height:387px;">
 								<p class="item-price">$199.9</p>
 							</div>
 							<div class="item-btn">
@@ -118,7 +144,7 @@
 		<div class="footer-wrapper">
 			<div class="container">
 				<div class="footer-content row">
-					<div class="footer-item">
+					<div class="footer-item col-3">
 						<h3>About</h3>
 						<ul>
 							<li>lorem</li>
@@ -126,24 +152,24 @@
 							<li>lorem</li>
 						</ul>
 					</div>
-					<div class="footer-item">
-						<h3>About</h3>
+					<div class="footer-item col-3">
+						<h3>Jobs</h3>
 						<ul>
 							<li>lorem</li>
 							<li>lorem</li>
 							<li>lorem</li>
 						</ul>
 					</div>
-					<div class="footer-item">
-						<h3>About</h3>
+					<div class="footer-item col-3">
+						<h3>Payment products</h3>
 						<ul>
 							<li>lorem</li>
 							<li>lorem</li>
 							<li>lorem</li>
 						</ul>
 					</div>
-					<div class="footer-item">
-						<h3>About</h3>
+					<div class="footer-item col-3">
+						<h3>Help</h3>
 						<ul>
 							<li>lorem</li>
 							<li>lorem</li>
