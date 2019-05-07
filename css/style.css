@@ -129,11 +129,16 @@ input, select {
 }
 
 .search .search-dropdown {
-  
+  position: absolute;
+  left: 0;
+  border-radius: 5px;
 }
 
 .search .text-search {
   width: 500px;
+  border-width: 1px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .search .search-icon i {
@@ -156,6 +161,7 @@ input, select {
 
 .menu li {
   display: inline-block;
+  position: relative;
 }
 
 .menu li a {
@@ -168,6 +174,24 @@ input, select {
 
 .menu li a .fas {
   margin-left: 0.5rem
+}
+
+ul.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 15px;
+  background: #f7bcae;
+  width: 80px;
+  text-align: center;
+  z-index: 1;
+}
+
+ul.dropdown-menu li {
+  display: block;
+}
+
+li.dropdown:hover ul.dropdown-menu {
+  display: block;
 }
 
 .cart-icon {

@@ -20,6 +20,10 @@
 				<!-- Top header -->
 				<div class="top-header">
 					<div class="search">
+						<div class="search-right">
+							<input type="text" class="text-search">
+							<a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+						</div>
 						<div class="search-left">
 							<select name="#" id="#" class="search-dropdown">
 								<option value="0" selected> All</option>
@@ -28,17 +32,20 @@
 								<option value="3">3</option>
 							</select>
 						</div>
-						<div class="search-right">
-							<input type="text" class="text-search">
-							<a href="#" class="search-icon"><i class="fas fa-search"></i></a>
-						</div>
 					</div>
 				</div>
 				<!-- Navbar -->
 				<nav class="nav-header">
 					<div class="nav-left">
 						<ul class="menu">
-							<li><a href="#">Departments<i class="fas fa-angle-down"></i></a></li>
+							<li class="dropdown">
+								<a href="#">Departments<i class="fas fa-angle-down"></i></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+								</ul>
+							</li>
 							<li><a href="#">Account</a></li>
 							<li><a href="#">Deals</a></li>
 							<li><a href="#">Registry</a></li>
