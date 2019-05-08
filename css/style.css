@@ -135,6 +135,7 @@ input, select {
 }
 
 .search .text-search {
+  padding-left: 60px;
   width: 500px;
   border-width: 1px;
   border-bottom-left-radius: 5px;
